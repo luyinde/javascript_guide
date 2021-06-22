@@ -1,4 +1,4 @@
 # js_guide
-javascript / es系列教程
+本仓库主要包括Javascript 系列教程（更新中）
 
-JavaScipt基础知识
+## 1. JavaScipt基础知识 【js_basic】
