@@ -1,4 +1,53 @@
-# js_guide
-本仓库主要包括Javascript 系列教程（更新中）
+# JavaScript 教程
 
-## 1. JavaScipt基础知识 【js_basic】
+梳理自己 JavaScript / ES 知识体系，深入研究每个知识点，整理成文档分享给大家。
+
+
+## JavaScript教程目录
+
+### 1.初级
+
+- 1.1 简介
+- 
+
+### 2.中级
+
+
+### 3.高级
+
+
+### 4.实践
+
+
+## ES 教程目录
+### 1.初级
+
+### 2.中级
+
+### 3.实践
+
+
+
+
+
+## 参考书籍
+
+主要基于以下书籍整理，如需了解更多细节，可自行查阅原著。
+
+
+> 《编写可维护的 JavaScript》  
+> [https://book.douban.com/subject/21792530](https://book.douban.com/subject/21792530)
+
+> 《JavaScript 语言精粹》  
+> [https://book.douban.com/subject/3590768](https://book.douban.com/subject/3590768)
+
+> 《JavaScript DOM 编程艺术》  
+> [https://book.douban.com/subject/6038371](https://book.douban.com/subject/6038371)
+
+> 《JavaScript 权威指南(第6版)》  
+> [https://book.douban.com/subject/10549733](https://book.douban.com/subject/10549733)
+
+> 《JavaScript 高级程序设计(第4版)》  
+> [https://book.douban.com/subject/10546125](https://book.douban.com/subject/10546125)
+
+ 
