@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深入理解var/let/const</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        //var
+        // getVarValue();
+        // function getVarValue(name) {
+        //     if (name) {
+        //         var value = "blue";
+        //         console.log("1" + value);
+        //     } else {
+        //         console.log("2" + value);
+        //     }
+        //     console.log("3" + value);
+        // }
+
+        //输出 :
+        //2undefined
+        //3undefined
+
+        //let
+        // getLetValue();
+        // function getLetValue(name) {
+        //     if (name) {
+        //         let value = "blue";
+        //         console.log("1" + value);
+        //     } else {
+        //         console.log("2" + value);
+        //     }
+        //     console.log("3" + value);
+        // }
+        //输出
+        //Uncaught ReferenceError: value is not defined
+
+        /*
+            undefined 和 value is not defined的区别？
+            undefined是已声明，未赋值。不明确的，也就是不知道用来干嘛的（虽有无值）
+            value is not defined代表未声明。未定义的，也就是说突然间冒出来的（无中生有） 
+        */
+
+        /*
+        总结：
+            var声明有变量提升(Hoisting)机制
+            let声明不会被提升
+        */
+
+
+
+        // getLetDemo();
+        // function getLetDemo() {
+        //     var count = 10;
+        //     let count = 20;
+        // }
+
+        //输出
+        //Uncaught SyntaxError: Identifier 'count' has already been declared
+
+        // getLetDemo2();
+        // function getLetDemo2() {
+        //     if (true) {
+        //         let count = 40;
+        //         console.log(count);
+        //     }
+        // }
+        //输出
+        //40
+
+        /*
+        总结：
+            同一作用域中不能用let重复定义已经存在的标识符。
+        */
+
+
+        // const声明
+        /*
+            const与let都是块级标识符
+            同一作用域中不能用const重复定义已经存在的标识符。
+            const 必须初始化才能使用
+            const 定义的常量不可以再赋值
+            const 声明对象，不允许修改绑定，可以修改属性值。
+        */
+
+
+        //术语：立即调用函数表达式 IIFE
+
+
+        //funVarDemo();
+        function funVarDemo() {
+            var funcs = [];
+            for (var i = 0; i < 10; i++) {
+                funcs.push(function () {
+                    console.log(i);
+                });
+            }
+
+           
+            funcs.forEach(function (func) {
+                func();
+            })
+        };
+
+        //期待输出 0-9
+        //结果输出 10个10
+
+        funVarDemoAdvance();
+        function funVarDemoAdvance() { 
+            var funcsAdvance = [];
+            for (var i = 0; i < 10; i++) {
+                funcsAdvance.push((function (value) {
+                    return function () { //IIFE 
+                        console.log(i);
+                    }
+                }(i)));
+            }
+ 
+            funcsAdvance.forEach(function (func) {
+                func();
+            });
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
