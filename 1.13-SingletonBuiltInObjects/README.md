@@ -118,7 +118,7 @@ window.sayColor();  // "red"
 
 JavaScript 中的 `window` 对象除了扮演规定的 `Global` 对象的角色外，还承担了很多别的任务。
 
-##　`Math` 对象
+## `Math` 对象
 
 JavaScript 还为保存数学公式和信息提供了一个公共位置，即 `Math` 对象。与我们在 `JavaScript` 直接编写的计算功能相比，`Math` 对象提供的计算功能执行起来要快得多。`Math` 对象中还提供了辅助完成这些计算的属性和方法。
 

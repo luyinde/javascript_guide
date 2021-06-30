@@ -89,7 +89,7 @@ console.log(falseValue instanceof Boolean);   // false
 
 理解基本类型的布尔值与 `Boolean` 对象之间的区别非常重要，我们的建议是永远不要使用 `Boolean` 对象。
 
-##　`Number` 类型
+## `Number` 类型
 
 `Number` 是与数字值对应的引用类型。要创建 `Number` 对象，可以在调用 `Number` 构造函数时向其中传递相应的数值。下面是一个例子。
 
